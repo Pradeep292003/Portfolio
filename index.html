@@ -10,20 +10,21 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-   <link rel="stylesheet" href="./index.css">
+
+    <link rel="stylesheet" href="./index.css">
 </head>
 
 <body>
     <header>
         <nav>
-            <div class="left">Pradeep Sharnagat</div>
+            <div class="left">Pradeep's Portfolio</div>
             <div class="right">
                 <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Qualifications</li>
-                    <li>Projects</li>
-                    <li>Contact Me</li>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Qualifications</a></li>
+                    <li><a href="">Projects</a></li>
+                    <li><a href="">Contact Me</a></li>
                 </ul>
             </div>
         </nav>
@@ -31,14 +32,26 @@
     <main>
         <section class="fs">
             <div class="ls">
-            Hey I'm Pradeep Sharnagat
-            <div>And i'm A Web Developer.</div>
+                Hey I'm <span class="purple">Pradeep Sharnagat</span>
+                <div>and I'm A Passionate</div>
+                <span id="element"></span>
             </div>
             <div class="rs">
-            <img src="bg3.png" alt="img not found">
+                <img src="bg.png" alt="img not found">
             </div>
         </section>
+        <section class="ss">
+            <h1></h1>
+        </section>
     </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Java Developer', 'Web Designer'],
+            typeSpeed: 50,
+        });
+    </script>
+
 </body>
 
 </html>
